@@ -22,7 +22,9 @@ set laststatus=2
 set noshowmode
 
 "Nerdtree plugin
-autocmd vimenter * NERDTree
+if has("gui_running")
+    autocmd vimenter * NERDTree
+endif
 
 "Buffkill plugin
 nnoremap <c-b> :BD<CR>
