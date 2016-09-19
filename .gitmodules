@@ -1,0 +1,24 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/vim-bufkill"]
+	path = bundle/vim-bufkill
+	url = https://github.com/qpkorr/vim-bufkill
+[submodule "bundle/zoomwintab.vim"]
+	path = bundle/zoomwintab.vim
+	url = https://github.com/troydm/zoomwintab.vim
+[submodule "repos/vim-pathogen"]
+	path = repos/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule "repos/vim-syntax-extra"]
+	path = bundle/vim-syntax-extra
+	url = https://github.com/justinmk/vim-syntax-extra.git
+[submodule "repos/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
