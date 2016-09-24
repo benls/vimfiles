@@ -1,6 +1,13 @@
 set encoding=utf-8
 "Pathogen plugin manager
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'vim-airline')
+call add(g:pathogen_disabled, 'vim-airline-themes')
+call add(g:pathogen_disabled, 'nerdtree')
 execute pathogen#infect()
+
+"Status line
+set laststatus=2
 
 "Basic settings
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.exe,*.so,*.dat,*/build/*,*/gen/*
@@ -15,17 +22,16 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-"Airline plugin
-let g:airline_powerline_fonts = 1
-" Enable the list of buffers
-let g:airline#extensions#bufferline#enabled = 1
-set laststatus=2
-set noshowmode
+""Airline plugin
+"let g:airline_powerline_fonts = 1
+"" Enable the list of buffers
+"let g:airline#extensions#bufferline#enabled = 1
+"set noshowmode
 
-"Nerdtree plugin
-if has("gui_running")
-    autocmd vimenter * NERDTree
-endif
+""Nerdtree plugin
+"if has("gui_running")
+"    autocmd vimenter * NERDTree
+"endif
 
 "Buffkill plugin
 nnoremap <c-b> :BD<CR>
