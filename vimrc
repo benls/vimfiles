@@ -10,7 +10,9 @@ execute pathogen#infect()
 set laststatus=2
 
 "Basic settings
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.exe,*.so,*.dat,*/build/*,*/gen/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.exe,*.so,*.dat,*/build/*,*/gen/*,*.bin
+set wildignore+=*.o,*.o32,*.obj,*.pyc
+set wildignore+=*.orig
 syntax on
 set hidden
 set backspace=2
