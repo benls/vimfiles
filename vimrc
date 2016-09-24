@@ -3,6 +3,7 @@ set encoding=utf-8
 execute pathogen#infect()
 
 "Basic settings
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.exe,*.so,*.dat,*/build/*,*/gen/*
 syntax on
 set hidden
 set backspace=2
@@ -31,6 +32,11 @@ nnoremap <c-b> :BD<CR>
 
 "color
 colorscheme Tomorrow-Night-Eighties
+
+"C Garmin indentation settings
+set cindent
+set cinoptions=>1s,e0,n0,f0,{1s,}0,^-s,L-1,:s,=s,l0,b0,gs,hs,ps,ts,is,+s,c3,C0,/0,(2s,us,U0,w0,W0,m0,j0,J0,)20,*70,#0
+
 
 "GUI
 if has("gui_running")
